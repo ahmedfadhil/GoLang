@@ -21,11 +21,15 @@ func multiple(a, b string) (string, string) {
 func main() {
 
 	x := 15
-	a := &x
+	a := &x // Memory address
 	fmt.Println(a)
 	fmt.Println(*a)
-	*a = 5
+	*a = 5 // Read memory address
 	fmt.Println(x)
+
+	*a = *a * *a
+	fmt.Println(x)
+	fmt.Println(*a)
 	//
 	//foo()
 	//fmt.Println("A number from 1-100: ", rand.Intn(100))
