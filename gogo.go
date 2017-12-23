@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 	"math"
 )
 
@@ -20,25 +19,33 @@ func multiple(a, b string) (string, string) {
 
 }
 func main() {
-	foo()
-	fmt.Println("A number from 1-100: ", rand.Intn(100))
-	var num1, num2 = 5.0, 4.6
-	//var num2 float64 = 12.55
-	fmt.Println("Adding:", add(num1, num2))
 
-	var w1, w2 = "Hey there", "brown cow"
-
-	fmt.Print("Multiplication: ")
-	fmt.Println(multiple(w1, w2))
-
-	var a int = 43
-	var b float64 = float64(a)
-
-	var x = a
-	y := b
-
+	x := 15
+	a := &x
+	fmt.Println(a)
+	fmt.Println(*a)
+	*a = 5
 	fmt.Println(x)
-	fmt.Println(" ")
-	fmt.Println(y)
+	//
+	//foo()
+	//fmt.Println("A number from 1-100: ", rand.Intn(100))
+	//var num1, num2 = 5.0, 4.6
+	////var num2 float64 = 12.55
+	//fmt.Println("Adding:", add(num1, num2))
+	//
+	//var w1, w2 = "Hey there", "brown cow"
+	//
+	//fmt.Print("Multiplication: ")
+	//fmt.Println(multiple(w1, w2))
+	//
+	//var a int = 43
+	//var b float64 = float64(a)
+	//
+	//var x = a
+	//y := b
+	//
+	//fmt.Println(x)
+	//fmt.Println(" ")
+	//fmt.Println(y)
 
 }
