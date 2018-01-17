@@ -4,16 +4,19 @@ import "fmt"
 
 func main() {
 	grades := make(map[string]float32)
-	grades["timmy"] = 34
-	grades["jimy"] = 45
-	grades["watson"] = 56
-	fmt.Println(grades)
-	TimesGrade := grades["timmy"]
-	fmt.Println(TimesGrade)
-	delete(grades, "timmy")
-	fmt.Println(grades)
-	for k, v := range grades {
-		fmt.Println(k, ":", v)
 
+	grades["Timmy"] = 23
+	grades["Jimmy"] = 24
+	grades["wat"] = 45
+
+	fmt.Println(grades)
+	TimeGrade := grades["Timmy"]
+	fmt.Println(TimeGrade)
+
+	delete(grades, "Timmy")
+	fmt.Println(grades)
+
+	for key, value := range grades {
+		fmt.Println(key, value)
 	}
 }
